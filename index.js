@@ -8,11 +8,11 @@ const contactRouter = require('./dist/routes/contactRouter');
 mongoose
     .connect('mongodb://localhost/CRMdb', { useNewUrlParser: true })
     .then(() => {
-        console.log('MongoDB Connected');
+        console.log('MongoDB Connected in branch');
     })
     .catch(err => {
         console.log(err);
-        console.log('MongoDB Not Connected');
+        console.log('MongoDB Not Connected in branch');
     });
     
 
